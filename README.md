@@ -1,6 +1,9 @@
 # реализована логика и ui игры лото.
 
-![hell loo world]('./assets/sreenApp/screen1.png')
+![screen1]('./assets/screenApp/screen1.png')
+![screen2]('./assets/screenApp/screen2.png')
+![screen3]('./assets/screenApp/screen3.png')
+
 
 # Stack:
 
