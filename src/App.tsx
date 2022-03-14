@@ -86,9 +86,9 @@ const App: React.FC = () => {
   }, [ticketsResult]);
 
   useEffect(() => {
-    const randomValuesTicketsOne = rnd(19, Lottery.maxValue);
-    const randomValuesTicketsTwo = rnd(2, Lottery.maxValue);
-    const randomTicketOne = Array(19)
+    const randomValuesTicketsOne = rnd(Lottery.countTicketElFirstField, Lottery.maxValue);
+    const randomValuesTicketsTwo = rnd(Lottery.countTicketElSecondField, Lottery.maxValue);
+    const randomTicketOne = Array(Lottery.countTicketElFirstField)
       .fill('')
       .map((_, index) => {
         return {
@@ -97,7 +97,7 @@ const App: React.FC = () => {
           value: randomValuesTicketsOne[index],
         };
       });
-    const randomTicketTwo = Array(2)
+    const randomTicketTwo = Array(Lottery.countTicketElSecondField)
       .fill('')
       .map((_, index) => {
         return {
@@ -145,8 +145,14 @@ const App: React.FC = () => {
   };
 
   const handleRandomGenerateTickets = () => {
-    const generateRandomIndexTicketsOne = rnd(Lottery.maxCountFirstField, 19);
-    const generateRandomIndexTicketsTwo = rnd(Lottery.maxCountSecondField, 2);
+    const generateRandomIndexTicketsOne = rnd(
+      Lottery.maxCountFirstField,
+      Lottery.countTicketElFirstField,
+    );
+    const generateRandomIndexTicketsTwo = rnd(
+      Lottery.maxCountSecondField,
+      Lottery.countTicketElSecondField,
+    );
 
     const resTicketsOne = ticketsOneState?.data.map((ticket, index) => {
       return {
