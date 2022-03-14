@@ -34,18 +34,5 @@ export const handleCalculateWinner = (
 export const handleIsWon = (firstField: number[], secondField: number[], maxValue: number) => {
   const randomFirstField = rnd(8, maxValue);
   const randomSecondField = rnd(2, maxValue);
-  // const countValueInFirstField = firstField.reduce((acc, value) => {
-  //   return randomFirstField.includes(value) ? acc + 1 : acc;
-  // }, 0);
-  // const countValueInSecondField = secondField.reduce((acc, value) => {
-  //   return randomSecondField.includes(value) ? acc + 1 : acc;
-  // }, 0);
-
-  // if (countValueInFirstField === 4) {
-  //   return true;
-  // }
-  // if (countValueInFirstField >= 3 && countValueInSecondField === 1) {
-  //   return true;
-  // }
   return handleCalculateWinner(firstField, secondField, randomFirstField, randomSecondField);
 };
