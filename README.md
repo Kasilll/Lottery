@@ -1,4 +1,6 @@
-реализована логика игры лото и ui.
+# реализована логика и ui игры лото.
+
+![hell loo world]('./assets/sreenApp/screen1.png')
 
 # Stack:
 
@@ -34,6 +36,8 @@ React/Typesctipt/redux-toolkit/redux-saga/styled-components
 { selectedNumber: { firstField: [ *first field numbers* ], secondField: [ *second field numbers* ] },
 isTicketWon: *Boolean(true||false)*
 }
+
+4) не возможность выбрать больше 8 чисел для первого поля и 1 для второго.
 
 
 
