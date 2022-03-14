@@ -1,4 +1,4 @@
-# реализована логика игры лото и ui.
+реализована логика игры лото и ui.
 
 # Stack:
 
@@ -31,15 +31,9 @@ React/Typesctipt/redux-toolkit/redux-saga/styled-components
 
 3) Реализовать логику отправки выбранных чисел на сервер по любому URL. Данные отправляються постом. В данных отправки следующий объект:
 
-{
-
-  selectedNumber:
-
-    { firstField: [ *first field numbers* ], secondField: [ *second field numbers* ] },
-
-    isTicketWon: *Boolean(true||false)*
-
-  }
+{ selectedNumber: { firstField: [ *first field numbers* ], secondField: [ *second field numbers* ] },
+isTicketWon: *Boolean(true||false)*
+}
 
 
 
